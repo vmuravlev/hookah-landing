@@ -1,0 +1,553 @@
+<!DOCTYPE html><html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>HookahBar</title>
+    <link rel="stylesheet" href="src/styles/jquery-ui.min.css">
+    <link rel="stylesheet" href="src/styles/animate.min.css">
+    <link rel="stylesheet" href="src/styles/slick.css">
+    <link rel="stylesheet" href="src/styles/slick-theme.css">
+    <link rel="stylesheet" href="dist/style.min.css">
+    <link rel="stylesheet" href="src/styles/form_validation.css">
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+
+<div class="smoke-background">
+    <img src="images/smoke-weak.png" class="smoke-weak" alt="smoke">
+    <img src="images/main-smoke-left.png" class="main-smoke-left" alt="smoke">
+    <img src="images/main-smoke-right.png" class="main-smoke-right" alt="smoke">
+</div>
+
+<div class="first-background">
+    <img src="images/main-background.png" class="main-background" alt="main-background">-->
+</div>
+
+
+
+<header class="header">
+    <div class="container">
+        <div class="logo-location">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+            <div class="location">
+                <div class="location-image">
+                    <img src="images/location.png" alt="Location">
+                </div>
+                <div class="location-text">
+                    Нижний Новгород, Ильинская улица, 3
+                </div>
+            </div>
+        </div>
+        <div class="header-info">
+            <div class="header-phone">
+                <div class="phone-image">
+                    <img src="images/phone.png" alt="Phone">
+                </div>
+                <div class="phone-number">
+                    +7 (964) 837-73-74
+                </div>
+            </div>
+            <div class="header-timetable">
+                <div class="timetable-first">
+                    Вс-Чт 12:00-02:00
+                </div>
+                <div class="timetable-second">
+                    Пт-Сб 12:00-06:00
+                </div>
+            </div>
+        </div>
+        <div class="burger" id="burger">
+            <svg width="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path d="M4 18L20 18" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"></path>
+                    <path d="M4 12L20 12" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"></path>
+                    <path d="M4 6L20 6" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"></path>
+                </g>
+            </svg>
+        </div>
+        <nav class="burger-menu" id="burger-menu">
+            <div class="burger-headline">
+                <div class="burger-title">Меню</div>
+                <div class="close-button">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         viewBox="0 0 492 492" style="enable-background:new 0 0 492 492;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M300.188,246L484.14,62.04c5.06-5.064,7.852-11.82,7.86-19.024c0-7.208-2.792-13.972-7.86-19.028L468.02,7.872
+			c-5.068-5.076-11.824-7.856-19.036-7.856c-7.2,0-13.956,2.78-19.024,7.856L246.008,191.82L62.048,7.872
+			c-5.06-5.076-11.82-7.856-19.028-7.856c-7.2,0-13.96,2.78-19.02,7.856L7.872,23.988c-10.496,10.496-10.496,27.568,0,38.052
+			L191.828,246L7.872,429.952c-5.064,5.072-7.852,11.828-7.852,19.032c0,7.204,2.788,13.96,7.852,19.028l16.124,16.116
+			c5.06,5.072,11.824,7.856,19.02,7.856c7.208,0,13.968-2.784,19.028-7.856l183.96-183.952l183.952,183.952
+			c5.068,5.072,11.824,7.856,19.024,7.856h0.008c7.204,0,13.96-2.784,19.028-7.856l16.12-16.116
+			c5.06-5.064,7.852-11.824,7.852-19.028c0-7.204-2.792-13.96-7.852-19.028L300.188,246z"/>
+	</g>
+</g>
+</svg>
+                </div>
+            </div>
+            <ul>
+                <li>
+                    <a href="#">Бронирование столика</a>
+                </li>
+                <li>
+                    <a href="#">Наше меню</a>
+                </li>
+                <li>
+                    <a href="#">3-D тур по кальянной</a>
+                </li>
+                <li>
+                    <a href="#">Контакты</a>
+                </li>
+                <li>
+                    <a href="#">Отзывы гостей</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="main">
+    <div class="container">
+        <div class="main-info wow animate__backInLeft">
+            <h1 class="double-title">
+                КАЛЬЯННАЯ <span>МЯТА</span> LOUNGE
+            </h1>
+            <div class="main-text">
+                Качество и атмосфера вашего отдыха
+            </div>
+            <div class="main-image-2">
+                <img src="images/main-hookah.png" alt="hookah">
+            </div>
+            <div class="main-actions">
+                <div class="main-action see-menu">
+                    <button class="btn" id="see-menu-button">Посмотреть меню</button>
+                </div>
+                <div class="main-action book-table">
+                    <button class="btn" id="book-table-button">Забронировать столик</button>
+                </div>
+            </div>
+        </div>
+        <div class="main-image wow animate__backInRight">
+            <img src="images/main-hookah.png" alt="hookah">
+        </div>
+    </div>
+</section>
+
+<section class="second">
+    <div class="container second-container">
+        <h2 class="advantages-title">
+            Почему нас выбирают?
+        </h2>
+        <div class="advantages">
+            <div class="row-1">
+                <div class="advantage advantage-1">
+                    Находимся <span>в самом центре</span> Нижнего Новгорода
+                </div>
+                <div class="advantage advantage-2">
+                    Более <span>100 видов</span> табака из разных стран
+                </div>
+            </div>
+            <div class="row-2">
+                <div class="advantage advantage-3">
+                    Собственная удобная <span>большая парковка</span>
+                </div>
+                <div class="advantage advantage-4">
+                    <span>5 лет</span> в дымной индустрии
+                </div>
+            </div>
+            <div class="advantage advantage-5">
+                <span>Sony PS</span> и <span>настольные игры</span> для душевного отдыха
+            </div>
+        </div>
+        <div class="second-image-coals">
+            <img src="images/coals.png" alt="coals">
+        </div>
+        <div class="second-image-circle">
+            <img src="images/circle.png" alt="circle">
+        </div>
+    </div>
+</section>
+
+<section class="third">
+    <div class="container third-container">
+        <h2 class="mint-title">
+            Почувствуй мятную атмосферу
+        </h2>
+        <div class="video-container">
+            <div class="mint-image">
+                <img src="images/mint.png" alt="mint">
+            </div>
+            <div class="video-slider">
+                <div class="slide">
+                    <iframe src="https://rutube.ru/play/embed/ca7a31ed72640f8250b4902021071197/" frameborder="0"
+                            allowfullscreen></iframe>
+                </div>
+                <div class="slide">
+                    <iframe src="https://rutube.ru/play/embed/5480c04d3d93df67e4eee8559c570234" frameborder="0"
+                            allowfullscreen></iframe>
+                </div>
+                <div class="slide">
+                    <iframe src="https://rutube.ru/play/embed/ca7a31ed72640f8250b4902021071197/" frameborder="0"
+                            allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="fourth">
+    <div class="container  fourth-container">
+        <h2 class="menu-title">
+            Наше меню
+        </h2>
+        <div class="fourth-image">
+            <img src="images/products-hookah.png" alt="hookah">
+        </div>
+        <div class="products" id="menu-block">
+            <h2 class="products-title">
+                Мята lounge
+            </h2>
+            <div class="product-pair">
+                <div class="product">
+                    <div class="cost">900 ₽</div>
+                    <div class="composition">Sherbe</div>
+                    <div class="composition">Adalya</div>
+                    <div class="composition">Afzal</div>
+                </div>
+                <div class="product">
+                    <div class="cost">1 100 ₽</div>
+                    <div class="composition">Darkside</div>
+                    <div class="composition">Fumari</div>
+                    <div class="composition">Nakhla</div>
+                    <div class="composition">Tangiers</div>
+                </div>
+            </div>
+            <div class="product-pair">
+                <div class="product">
+                    <div class="cost">1 400 ₽</div>
+                    <div class="composition">Мохито</div>
+                    <div class="composition">Баунти</div>
+                    <div class="composition">Фараон</div>
+                    <div class="composition">Дамский</div>
+                </div>
+                <div class="product">
+                    <div class="cost">1 700 ₽</div>
+                    <div class="composition">Яблоко</div>
+                    <div class="composition">Апельсин</div>
+                    <div class="composition">Грейпфрут</div>
+                </div>
+            </div>
+            <div class="product-pair">
+                <div class="product">
+                    <div class="cost">2 000 ₽</div>
+                    <div class="composition">Кокос</div>
+                    <div class="composition">Ананас</div>
+                </div>
+                <div class="product">
+                    <div class="cost">3 000 ₽</div>
+                    <div class="composition">Фирменный кальян мята</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="fifth">
+    <div class="smoke-fifth-image">
+        <img src="images/smoke-fifth-adaptive.png" alt="smoke">
+    </div>
+    <div class="ps5-image">
+        <img src="images/fifth-ps5.png" alt="ps5">
+    </div>
+    <div class="container">
+        <h2 class="fifth-title">Наши залы</h2>
+        <div class="halls wow animate__zoomIn">
+            <div class="hall-pair">
+                <div class="hall">
+                    <div class="hall-description">
+                        <div class="hall-title">
+                            Для больших компаний
+                        </div>
+                        <div class="hall-text">
+                            Что может быть лучше, чем проводить время в шумной и дружной компании? Правильно, проводить
+                            время в
+                            отдельном зале! VIP комната или lounge зона, выбор за вами!
+                        </div>
+                    </div>
+                    <div class="hall-image">
+                        <img src="images/hall-1.png" alt="group">
+                    </div>
+                </div>
+                <div class="hall">
+                    <div class="hall-description">
+                        <div class="hall-title">
+                            Банкеты и дни рождения
+                        </div>
+                        <div class="hall-text">
+                            Праздник это к нам. Ведь у нас любое важное событие становится
+                            не только веселым, но и выгодным для вас!
+                        </div>
+                    </div>
+                    <div class="hall-image">
+                        <img src="images/hall-2.png" alt="balloons">
+                    </div>
+                </div>
+            </div>
+            <div class="hall-pair">
+                <div class="hall">
+                    <div class="hall-description">
+                        <div class="hall-title">
+                            Игровая зона PS5
+                        </div>
+                        <div class="hall-text">
+                            Погрузитесь в мир консольных баталий на качественном уровне! Незабываемые впечатления и все
+                            новые
+                            игры ждут вас!
+                        </div>
+                    </div>
+                    <div class="hall-image">
+                        <img src="images/hall-3.png" alt="group">
+                    </div>
+                </div>
+                <div class="hall">
+                    <div class="hall-description">
+                        <div class="hall-title">
+                            Место для свидания
+                        </div>
+                        <div class="hall-text">
+                            Пожалуй, лучший подарок для любимого человека. Ощущение праздника романтики окружит вас
+                            мгновенно,
+                            как только вы зайдете.
+                        </div>
+                    </div>
+                    <div class="hall-image">
+                        <img src="images/hall-4.png" alt="group">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="order" id="book-table-block">
+    <div class="container order-container">
+        <div class="rings-image">
+            <img src="images/rings.png" alt="rings">
+        </div>
+        <h2 class="order-title">Бронирование столика</h2>
+        <div class="order-text">Заполните форму и с вами свяжется менеджер для подтверждения брони</div>
+        <div class="order-form">
+            <input type="text" class="order-input name" id="input_name" placeholder="Ваше имя">
+            <div class="error-input">Введите ваше имя</div>
+            <input type="text" class="order-input phone-number" id="phone1" placeholder="+7 (___) ___ - __ - __">
+            <div class="error-input">Введите ваш номер телефона</div>
+            <div class="order-input time-select">
+                <input type="text" class="order-input time" id="time" name="time" placeholder="Выберите время"
+                       readonly/>
+                <div class="select-arrow-transparent">
+                    <img src="images/time-select-arrow.png" alt="arrow">
+                </div>
+                <div class="select-arrow-white" id="white-arrow">
+                    <img src="images/time-select-arrow-white.png" alt="arrow">
+                </div>
+                <div class="time-options">
+                    <div class="time-option available-time">22:00</div>
+                    <div class="time-option available-time">22:30</div>
+                    <div class="time-option available-time">23:00</div>
+                    <div class="time-option available-time">23:30</div>
+                    <div class="time-option available-time">00:00</div>
+                    <div class="time-option unavailable-time">00:30</div>
+                    <div class="time-option unavailable-time">01:00</div>
+                    <div class="time-option available-time">01:30</div>
+                </div>
+            </div>
+            <div class="error-input error-input-time">Выберите время</div>
+            <button class="btn" id="submit-button">Забронировать столик</button>
+        </div>
+        <div class="order-success">
+            Спасибо, мы свяжемся с вами в ближайшее время!
+        </div>
+    </div>
+</section>
+
+<section class="sixth">
+    <div class="container sixth-container">
+        <h2 class="sixth-title">Отзывы гостей</h2>
+        <div class="reviews-slider">
+            <div class="review-card">
+                <div class="user">
+                    <div class="user-photo">
+                        <img src="images/guest-1.png" alt="guest">
+                    </div>
+                    <div class="user-info">
+                        <div class="user-name">Сергей Калугин</div>
+                        <div class="user-status">постоянный гость</div>
+                    </div>
+                </div>
+                <div class="review-text">
+                    Очень уютное заведение, прекрасные кальяны, очень клёвая чайная карта, отзывчивый персонал,
+                    прекрасная шаговая доступность от метро, собственная паркова.
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="user">
+                    <div class="user-photo">
+                        <img src="images/guest-2.png" alt="guest">
+                    </div>
+                    <div class="user-info">
+                        <div class="user-name">Мария Синицына</div>
+                        <div class="user-status">постоянный гость</div>
+                    </div>
+                </div>
+                <div class="review-text">
+                    Очень душевное, уютное место с прекрасной атмосферой! И, кстати,
+                    вполне адекватные цены!
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="user">
+                    <div class="user-photo">
+                        <img src="images/guest-3.png" alt="guest">
+                    </div>
+                    <div class="user-info">
+                        <div class="user-name">Шерлок Холмс</div>
+                        <div class="user-status">постоянный гость</div>
+                    </div>
+                </div>
+                <div class="review-text">
+                    Тщательно подобранные смеси и уютная атмосфера делают эту кальянную идеальным местом для размышлений
+                    и встреч.
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="user">
+                    <div class="user-photo">
+                        <img src="images/guest-4.png" alt="guest">
+                    </div>
+                    <div class="user-info">
+                        <div class="user-name">Гэндальф Серый</div>
+                        <div class="user-status">постоянный гость</div>
+                    </div>
+                </div>
+                <div class="review-text">
+                    В этом уединённом уголке, где дым кальяна медленно вьётся, словно туман над древними горами, я
+                    нахожу покой и мудрость. Здесь каждый вдох — как заклинание, наполняющее разум светом и силой.
+                    Рекомендую всем странникам, ищущим отдых и вдохновение.
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="user">
+                    <div class="user-photo">
+                        <img src="images/guest-5.png" alt="guest">
+                    </div>
+                    <div class="user-info">
+                        <div class="user-name">Альбус Дамблдор</div>
+                        <div class="user-status">постоянный гость</div>
+                    </div>
+                </div>
+                <div class="review-text">
+                    В этом месте, где дым словно заклинание, можно найти покой и вдохновение для великих дел. Кальянная
+                    достойна внимания каждого искателя знаний.
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="user">
+                    <div class="user-photo">
+                        <img src="images/guest-6.png" alt="guest">
+                    </div>
+                    <div class="user-info">
+                        <div class="user-name">Тирион Ланнистер</div>
+                        <div class="user-status">постоянный гость</div>
+                    </div>
+                </div>
+                <div class="review-text">
+                    Ум и остроумие требуют отдыха, а эта кальянная — идеальное место для восстановления сил и приятных
+                    разговоров.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="footer">
+    <div class="footer-smoke">
+        <img src="images/smoke-footer.png" class="smoke-footer" alt="smoke">
+    </div>
+    <div class="container footer-container">
+        <div class="footer-logos">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo">
+            </div>
+            <div class="rights">
+                Все права защищены, 2021
+            </div>
+            <div class="icons">
+                <div class="telegram">
+                    <img src="images/telegram.png" alt="telegram">
+                </div>
+                <div class="instagram">
+                    <img src="images/instagram.png" alt="instagram">
+                </div>
+            </div>
+        </div>
+        <div class="footer-info">
+            <div class="footer-info-title">Информация</div>
+            <div class="footer-info-text">
+                <a href="#menu-block">Меню</a>
+            </div>
+            <div class="footer-info-text">
+                <a href="#">3-D тур по залам</a>
+            </div>
+            <div class="footer-info-text">
+                <a href="#book-table-block">Бронирование столика</a>
+            </div>
+            <div class="footer-info-text">
+                <a href="#">Контакты</a>
+            </div>
+        </div>
+        <div class="footer-contacts">
+            <div class="footer-contacts-title">Контакты</div>
+            <div class="footer-contacts-text footer-phone">+7 (964) 837-73-74</div>
+            <div class="footer-contacts-text footer-location">Нижний Новгород, Ильинская улица, 3</div>
+            <div class="footer-timetable">
+                <div class="footer-contacts-timetable">
+                    Вс-Чт 12:00-02:00
+                </div>
+                <div class="footer-contacts-timetable">
+                    Пт-Сб 12:00-06:00
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="loader">
+    <div class="lds-roller">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+
+
+<script src="scripts/jquery-3.7.1.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="scripts/slick.min.js"></script>
+<script src="scripts/jquery.inputmask.bundle.min.js"></script>
+<script src="scripts/wow.min.js"></script>
+<script src="scripts/main.js"></script>
+<script src="form_validation.js"></script>
+
+</body>
+</html>
