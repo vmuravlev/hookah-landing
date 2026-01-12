@@ -8,17 +8,17 @@ Adaptive landing page for hookah lounge with interactive form, sliders and smoot
 
 ## Features
 
-- Fully responsive design (mobile-first)
+- Fully responsive design
 - Contact/order form with validation
 - Sliders/carousel for gallery/products
 - CSS/JS animations for sections, buttons, hover effects
-- Smooth scrolling and parallax elements
+- Smooth scrolling elements
 
 ## Tech Stack
 
 - HTML5
 - CSS3 (Grid/Flexbox, Animations, Media Queries)
-- Vanilla JavaScript (Sliders, Form logic, Theme switching if present)
+- Vanilla JavaScript (Sliders, Form logic)
 
 ## Quick Start
 
